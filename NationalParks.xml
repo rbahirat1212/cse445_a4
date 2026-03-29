@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <NationalParks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/rbahirat1212/cse445_a4/main/NationalParks.xsd">
+               xsi:noNamespaceSchemaLocation="https://rbahirat1212.github.io/cse445_a4/NationalParks.xsd">
 
   <NationalPark Rating="4.9">
     <Name>Grand Canyon</Name>
@@ -16,7 +16,7 @@
     </Address>
   </NationalPark>
 
-  <NationalPark>
+  <NationalPark Rating="4.8">
     <Name>Yellowstone</Name>
     <Phone>307-344-7381</Phone>
     <Phone>307-344-2107</Phone>
@@ -29,11 +29,11 @@
     </Address>
   </NationalPark>
 
-  <NationalPark Rating="4.8">
+  <NationalPark Rating="4.7">
     <Name>Yosemite</Name>
     <Phone>209-372-0200</Phone>
     <Address NearestAirport="Fresno Yosemite">
-      <Number>9</Number>
+      <Number>9035</Number>
       <Street>Village Drive</Street>
       <City>Yosemite Valley</City>
       <State>CA</State>
@@ -44,21 +44,34 @@
   <NationalPark>
     <Name>Zion</Name>
     <Phone>435-772-3256</Phone>
-    <Address NearestAirport="St George">
+    <Address NearestAirport="St. George Regional">
       <Number>1</Number>
-      <Street>Zion Park Boulevard</Street>
+      <Street>Zion Park Blvd</Street>
       <City>Springdale</City>
       <State>UT</State>
       <Zip>84767</Zip>
     </Address>
   </NationalPark>
 
-  <NationalPark Rating="4.7">
+  <NationalPark Rating="4.6">
+    <Name>Olympic</Name>
+    <Phone>360-565-3130</Phone>
+    <Phone>360-452-4501</Phone>
+    <Address NearestAirport="Seattle-Tacoma">
+      <Number>3002</Number>
+      <Street>Mount Angeles Road</Street>
+      <City>Port Angeles</City>
+      <State>WA</State>
+      <Zip>98362</Zip>
+    </Address>
+  </NationalPark>
+
+  <NationalPark Rating="4.5">
     <Name>Rocky Mountain</Name>
     <Phone>970-586-1206</Phone>
-    <Address NearestAirport="Denver">
+    <Address NearestAirport="Denver International">
       <Number>1000</Number>
-      <Street>US-36</Street>
+      <Street>US Highway 36</Street>
       <City>Estes Park</City>
       <State>CO</State>
       <Zip>80517</Zip>
@@ -66,19 +79,19 @@
   </NationalPark>
 
   <NationalPark>
-    <Name>Acadia</Name>
-    <Phone>207-288-3338</Phone>
-    <Phone>207-288-8700</Phone>
-    <Address NearestAirport="Bar Harbor">
-      <Number>20</Number>
-      <Street>McFarland Hill Drive</Street>
-      <City>Bar Harbor</City>
-      <State>ME</State>
-      <Zip>04609</Zip>
+    <Name>Great Smoky Mountains</Name>
+    <Phone>865-436-1200</Phone>
+    <Phone>828-436-1262</Phone>
+    <Address NearestAirport="McGhee Tyson">
+      <Number>107</Number>
+      <Street>Park Headquarters Road</Street>
+      <City>Gatlinburg</City>
+      <State>TN</State>
+      <Zip>37738</Zip>
     </Address>
   </NationalPark>
 
-  <NationalPark Rating="4.6">
+  <NationalPark Rating="4.7">
     <Name>Glacier</Name>
     <Phone>406-888-7800</Phone>
     <Address NearestAirport="Glacier Park">
@@ -90,43 +103,32 @@
     </Address>
   </NationalPark>
 
-  <NationalPark>
-    <Name>Olympic</Name>
-    <Phone>360-565-3130</Phone>
-    <Address NearestAirport="Seattle">
-      <Number>600</Number>
-      <Street>E Park Avenue</Street>
-      <City>Port Angeles</City>
-      <State>WA</State>
-      <Zip>98362</Zip>
-    </Address>
-  </NationalPark>
-
-  <NationalPark Rating="4.5">
-    <Name>Everglades</Name>
-    <Phone>305-242-7700</Phone>
-    <Address NearestAirport="Miami">
-      <Number>40001</Number>
-      <Street>State Road 9336</Street>
-      <City>Homestead</City>
-      <State>FL</State>
-      <Zip>33034</Zip>
-    </Address>
-  </NationalPark>
-
-  <NationalPark>
-    <Name>Arches</Name>
-    <Phone>435-719-2299</Phone>
-    <Address NearestAirport="Canyonlands Field">
-      <Number>2282</Number>
-      <Street>S West Street</Street>
-      <City>Moab</City>
-      <State>UT</State>
-      <Zip>84532</Zip>
-    </Address>
-  </NationalPark>
-
   <NationalPark Rating="4.4">
+    <Name>Acadia</Name>
+    <Phone>207-288-3338</Phone>
+    <Address NearestAirport="Bangor">
+      <Number>25</Number>
+      <Street>Visitor Center Road</Street>
+      <City>Bar Harbor</City>
+      <State>ME</State>
+      <Zip>04609</Zip>
+    </Address>
+  </NationalPark>
+
+  <NationalPark>
+    <Name>Shenandoah</Name>
+    <Phone>540-999-3500</Phone>
+    <Phone>540-999-3489</Phone>
+    <Address NearestAirport="Charlottesville">
+      <Number>3655</Number>
+      <Street>US Highway 211 East</Street>
+      <City>Luray</City>
+      <State>VA</State>
+      <Zip>22835</Zip>
+    </Address>
+  </NationalPark>
+
+  <NationalPark Rating="4.8">
     <Name>Joshua Tree</Name>
     <Phone>760-367-5500</Phone>
     <Address NearestAirport="Palm Springs">
