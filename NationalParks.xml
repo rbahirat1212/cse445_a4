@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<NationalParks>
-
+<!-- Error 1: Root element is NationalPark instead of NationalParks -->
+<NationalPark>
+  <!-- Error 3: Phone element is missing -->
   <NationalPark Rating="4.9">
     <Name>Grand Canyon</Name>
-    <Phone>928-638-7496</Phone>
-    <Phone>888-297-2757</Phone>
-    <Phone>866-499-2574</Phone>
     <Address NearestAirport="FlagStaff">
       <Number>8</Number>
       <Street>S Entrance Road</Street>
@@ -14,12 +12,12 @@
       <Zip>86023</Zip>
     </Address>
   </NationalPark>
-
+  <!-- Error 2: NearestAirport required attribute is missing -->
   <NationalPark>
     <Name>Yellowstone</Name>
     <Phone>307-344-7381</Phone>
     <Phone>307-344-2107</Phone>
-    <Address NearestAirport="West Yellowstone">
+    <Address>
       <Number>2</Number>
       <Street>N Entrance Road</Street>
       <City>Yellowstone National Park</City>
@@ -27,9 +25,10 @@
       <Zip>82190</Zip>
     </Address>
   </NationalPark>
-
+  <!-- Error 5: Two Name elements -->
   <NationalPark Rating="4.8">
     <Name>Yosemite</Name>
+    <Name>Yosemite National Park</Name>
     <Phone>209-372-0200</Phone>
     <Phone>209-372-0280</Phone>
     <Address NearestAirport="Fresno Yosemite">
@@ -40,7 +39,7 @@
       <Zip>95389</Zip>
     </Address>
   </NationalPark>
-
+  <!-- Error 4: Address has no closing tag -->
   <NationalPark>
     <Name>Zion</Name>
     <Phone>435-772-3256</Phone>
@@ -50,92 +49,5 @@
       <City>Springdale</City>
       <State>UT</State>
       <Zip>84767</Zip>
-    </Address>
   </NationalPark>
-
-  <NationalPark Rating="4.7">
-    <Name>Rocky Mountain</Name>
-    <Phone>970-586-1206</Phone>
-    <Address NearestAirport="Denver">
-      <Number>1000</Number>
-      <Street>US-36</Street>
-      <City>Estes Park</City>
-      <State>CO</State>
-      <Zip>80517</Zip>
-    </Address>
-  </NationalPark>
-
-  <NationalPark>
-    <Name>Acadia</Name>
-    <Phone>207-288-3338</Phone>
-    <Phone>207-288-8700</Phone>
-    <Address NearestAirport="Bar Harbor">
-      <Number>20</Number>
-      <Street>McFarland Hill Drive</Street>
-      <City>Bar Harbor</City>
-      <State>ME</State>
-      <Zip>04609</Zip>
-    </Address>
-  </NationalPark>
-
-  <NationalPark Rating="4.6">
-    <Name>Glacier</Name>
-    <Phone>406-888-7800</Phone>
-    <Address NearestAirport="Glacier Park">
-      <Number>64</Number>
-      <Street>Grinnell Drive</Street>
-      <City>West Glacier</City>
-      <State>MT</State>
-      <Zip>59936</Zip>
-    </Address>
-  </NationalPark>
-
-  <NationalPark>
-    <Name>Olympic</Name>
-    <Phone>360-565-3130</Phone>
-    <Address NearestAirport="Seattle">
-      <Number>600</Number>
-      <Street>E Park Avenue</Street>
-      <City>Port Angeles</City>
-      <State>WA</State>
-      <Zip>98362</Zip>
-    </Address>
-  </NationalPark>
-
-  <NationalPark Rating="4.5">
-    <Name>Everglades</Name>
-    <Phone>305-242-7700</Phone>
-    <Address NearestAirport="Miami">
-      <Number>40001</Number>
-      <Street>State Road 9336</Street>
-      <City>Homestead</City>
-      <State>FL</State>
-      <Zip>33034</Zip>
-    </Address>
-  </NationalPark>
-
-  <NationalPark>
-    <Name>Arches</Name>
-    <Phone>435-719-2299</Phone>
-    <Address NearestAirport="Canyonlands Field">
-      <Number>2282</Number>
-      <Street>S West Street</Street>
-      <City>Moab</City>
-      <State>UT</State>
-      <Zip>84532</Zip>
-    </Address>
-  </NationalPark>
-
-  <NationalPark Rating="4.4">
-    <Name>Joshua Tree</Name>
-    <Phone>760-367-5500</Phone>
-    <Address NearestAirport="Palm Springs">
-      <Number>74485</Number>
-      <Street>National Park Drive</Street>
-      <City>Twentynine Palms</City>
-      <State>CA</State>
-      <Zip>92277</Zip>
-    </Address>
-  </NationalPark>
-
-</NationalParks>
+</NationalPark>
