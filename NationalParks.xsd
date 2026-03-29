@@ -2,7 +2,6 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
-
   <xs:element name="NationalParks">
     <xs:complexType>
       <xs:sequence>
@@ -29,6 +28,9 @@
         </xs:element>
       </xs:sequence>
     </xs:complexType>
+    <xs:unique name="UniqueNationalParkName">
+      <xs:selector xpath="NationalPark"/>
+      <xs:field xpath="Name"/>
+    </xs:unique>
   </xs:element>
-
 </xs:schema>
