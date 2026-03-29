@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- Error 1: Root element is NationalPark instead of NationalParks -->
 <NationalPark>
+  <!-- Error 3: Phone element is missing -->
   <NationalPark Rating="4.9">
     <Name>Grand Canyon</Name>
-    <Phone>928-638-7496</Phone>
-    <Phone>888-297-2757</Phone>
-    <Phone>866-499-2574</Phone>
     <Address NearestAirport="FlagStaff">
       <Number>8</Number>
       <Street>S Entrance Road</Street>
@@ -13,44 +12,42 @@
       <Zip>86023</Zip>
     </Address>
   </NationalPark>
-
-  <NationalPark Rating="4.8">
+  <!-- Error 2: NearestAirport required attribute is missing -->
+  <NationalPark>
     <Name>Yellowstone</Name>
     <Phone>307-344-7381</Phone>
     <Phone>307-344-2107</Phone>
-    <Address NearestAirport="Jackson Hole">
-      <Number>1</Number>
-      <Street>Grand Loop Road</Street>
+    <Address>
+      <Number>2</Number>
+      <Street>N Entrance Road</Street>
       <City>Yellowstone National Park</City>
       <State>WY</State>
       <Zip>82190</Zip>
     </Address>
   </NationalPark>
-
-  <NationalPark>
+  <!-- Error 5: Two Name elements -->
+  <NationalPark Rating="4.8">
     <Name>Yosemite</Name>
-    <!-- Phone element intentionally removed -->
+    <Name>Yosemite National Park</Name>
+    <Phone>209-372-0200</Phone>
+    <Phone>209-372-0280</Phone>
     <Address NearestAirport="Fresno Yosemite">
-      <Number>9</Number>
+      <Number>9035</Number>
       <Street>Village Drive</Street>
       <City>Yosemite Valley</City>
       <State>CA</State>
       <Zip>95389</Zip>
     </Address>
   </NationalPark>
-
-  <NationalPark Rating="4.7">
+  <!-- Error 4: Address has no closing tag -->
+  <NationalPark>
     <Name>Zion</Name>
-    <Name>Zion National Park</Name>
     <Phone>435-772-3256</Phone>
-    <Phone>435-772-0170</Phone>
-    <Address NearestAirport="St. George Regional">
+    <Address NearestAirport="St George">
       <Number>1</Number>
-      <Street>Zion Park Blvd</Street>
+      <Street>Zion Park Boulevard</Street>
       <City>Springdale</City>
       <State>UT</State>
       <Zip>84767</Zip>
-    <!-- Address closing tag intentionally missing -->
   </NationalPark>
-
 </NationalPark>
