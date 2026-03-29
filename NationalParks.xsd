@@ -28,9 +28,5 @@
         </xs:element>
       </xs:sequence>
     </xs:complexType>
-    <xs:key name="NationalParkNameKey">
-      <xs:selector xpath="NationalPark"/>
-      <xs:field xpath="Name"/>
-    </xs:key>
   </xs:element>
 </xs:schema>
