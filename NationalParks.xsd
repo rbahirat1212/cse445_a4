@@ -2,15 +2,14 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">
-
   <xs:element name="NationalParks">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="NationalPark" maxOccurs="unbounded">
+        <xs:element name="NationalPark" maxOccurs="unbounded" minOccurs="1">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Name" type="xs:string" />
-              <xs:element name="Phone" type="xs:string" maxOccurs="unbounded" />
+              <xs:element name="Phone" type="xs:string" minOccurs="1" maxOccurs="unbounded" />
               <xs:element name="Address">
                 <xs:complexType>
                   <xs:sequence>
@@ -24,11 +23,14 @@
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
-            <xs:attribute name="Rating" type="xs:string" use="optional" />
+            <xs:attribute name="Rating" type="xs:decimal" use="optional" />
           </xs:complexType>
         </xs:element>
       </xs:sequence>
     </xs:complexType>
+    <xs:key name="NationalParkNameKey">
+      <xs:selector xpath="NationalPark"/>
+      <xs:field xpath="Name"/>
+    </xs:key>
   </xs:element>
-
 </xs:schema>
